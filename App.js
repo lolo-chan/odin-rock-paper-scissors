@@ -4,5 +4,9 @@ function getComputerChoice() {
     return randchoice;
 }
 
+function getPlayerChoice() {
+    const playerchoice = prompt("Rock, Paper, or Scissors?");
+    return playerchoice;
+}
 
 
