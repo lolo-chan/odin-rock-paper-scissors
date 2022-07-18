@@ -21,16 +21,50 @@ function getPlayerChoice() {
 }
 
 function gameRound(a,b) {
+    let c = 0;
     if(a===b){
         alert(`Tie!\nComputers choice: ${a}\nYou chose: ${b}`);
     }
     else if((a==='rock' && b==='scissors') || (a==='paper' && b==='rock') || (a==='scissors' && b==='paper')){
         alert(`You lost!\nComputers choice: ${a}\nYou chose: ${b}`);
+        c+=1;
     }
     else{
         alert(`You won!\nComputers choice: ${a}\nYou chose: ${b}`);
+        c+=2;
+    }
+    return c;
+    
+}
+
+function game(){
+    let pscore = 0;
+    let cscore = 0;
+    let r = 0;
+    while(r<5){
+        let s=gameRound(getComputerChoice(), getPlayerChoice());
+        if(s==0){         
+            r++;
+        }
+        else if(s==1){
+            cscore++;           
+            r++;
+        }
+        else if(s==2){
+            pscore++;
+            r++;
+        }
+        alert(`Your Score: ${pscore}\nOpponent's Score: ${cscore}`);
+    }
+    if(pscore>cscore){
+        alert('You won the match!');
+    }
+    else if(cscore>pscore){
+        alert('You lost the match :/');
+    }
+    else{
+        alert('Match ended in a draw!');
     }
 }
 
-gameRound(getComputerChoice(), getPlayerChoice());
-
+game();
