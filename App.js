@@ -5,8 +5,11 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-    let playerchoice = prompt("Rock, Paper, or Scissors?");
-    return playerchoice.toLowerCase();
+    let selection = prompt("Rock, Paper, or Scissors?");
+    playerchoice = selection.toLowerCase();
+    if(playerchoice==='rock' || playerchoice==='paper' || playerchoice==='scissors'){
+        return playerchoice.toLowerCase();
+    }
 }
 
 function gameRound(a,b) {
