@@ -34,7 +34,6 @@ function gameRound(a,b) {
         c+=2;
     }
     return c;
-    
 }
 
 function game(){
@@ -54,16 +53,19 @@ function game(){
             pscore++;
             r++;
         }
-        alert(`Your Score: ${pscore}\nOpponent's Score: ${cscore}`);
+        if(r<4){
+            alert(`Your Score: ${pscore}\nOpponent's Score: ${cscore}`);
+        }
     }
+
     if(pscore>cscore){
-        alert('You won the match!');
+        alert(`You won the match!\nYour Score: ${pscore}\nOpponent's Score: ${cscore}`);
     }
     else if(cscore>pscore){
-        alert('You lost the match :/');
+        alert(`You lost the match :/\nYour Score: ${pscore}\nOpponent's Score: ${cscore}`);
     }
     else{
-        alert('Match ended in a draw!');
+        alert(`Match ended in a draw!\nYour Score: ${pscore}\nOpponent's Score: ${cscore}`);
     }
 }
 
