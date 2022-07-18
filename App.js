@@ -9,9 +9,17 @@ function getPlayerChoice() {
     return playerchoice.toLowerCase();
 }
 
-function gameRound(b) {
-    console.log(b);
+function gameRound(a,b) {
+    if(a===b){
+        alert('Tie!');
+    }
+    else if((a==='rock' && b==='scissors') || (a==='paper' && b==='rock') || (a==='scissors' && b==='paper')){
+        alert('You lost!');
+    }
+    else{
+        alert('You won!');
+    }
 }
 
-gameRound(getPlayerChoice());
+
 
