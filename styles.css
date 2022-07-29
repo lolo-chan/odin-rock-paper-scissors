@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    padding: 80px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.byline {
+    color: aliceblue;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.choice {
+    display: flex;
+    gap: 160px;
+    padding: 80px;
+    justify-content: center;
+    background-color: black;
+}
+
+.btnrock,
+.btnpaper,
+.btnscissors {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 4px solid white;
+    color: aliceblue;
+    border-radius: 8px;
+}
+
+.infopara {
+    background-color: black;
+    color: aliceblue;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rules {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.roundNo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.score {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.gameover{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.playagainbutton {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 4px solid white;
+    color: aliceblue;
+    border-radius: 8px;
+    margin: 80px;
+}
